@@ -1,10 +1,9 @@
 package com.nodosacademy.cuenticas.data
 
-import com.nodosacademy.cuenticas.ExpenseType
-
-data class Expense(
+data class MoneyMovement(
     val id: Int,
     val title: String,
     val value: Double,
-    val expenseType: ExpenseType,
+    val isIncome: Boolean = false,
+    val expenseType: MovementType,
 )
